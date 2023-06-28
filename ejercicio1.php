@@ -23,6 +23,20 @@ echo "<br>";
 echo $salida;
 
 
+// Definir la constante con tu nombre
+define("GREETING", 'Elviz Alvarez');
+echo "<br>";
+
+echo (GREETING);
+
+
+
+
+
+
+
+
+
 
 
 
