@@ -77,6 +77,63 @@ echo "la sumatoria de las variables es: " . $sumaxynm . "<br>";
 $productoxynm = $x * $y * $n * $m;
 echo "el producto de las variables es:" . $productoxynm . "<br>";
 
+// calculadora
+function calculadora($num1, $num2,$operacion){
+
+switch($operacion){
+
+case 'suma':
+    $resultado = $num1 + $num2;
+    break;
+case 'resta':
+    $resultado = $num1 - $num2;
+    break;
+case 'multiplicacion':
+    $resultado = $num1 * $num2;
+    break;
+case 'division':
+    if($num2 !=0){
+        $resultado = $num1 / $num2;
+    }else{
+        $resultado = "no se puedr dividir entre cero";
+    }
+    break;
+    default:
+    $resultado = "operacion no es valida las opciones son : + , - , * , / ";
+    break;
+}
+return $resultado;
+}
+// numeros prueba 
+$num1 = 100;
+$num2 = 50;
+
+$suma = calculadora($num1 , $num2, 'suma');
+echo " el resultado es :" .$suma . "<br>";
+
+$resta = calculadora($num1 , $num2, 'resta');
+echo "el resultado es :" . $resta . "<br>";
+
+$multiplicacion = calculadora($num1 , $num2, 'multiplicacion');
+echo "el resultado es :" . $multiplicacion . "<br>";
+
+$division = calculadora($num1 , $num2, 'division');
+echo "el resultado es :" . $division . "<br>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
