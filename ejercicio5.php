@@ -22,7 +22,8 @@
     // datos ejemplo
     $notaEstudiante = 75;
     $gradoEstudiante = verificarGrado($notaEstudiante);
-    echo"el grado es : " . $gradoEstudiante;
+    echo "el grado es : " . $gradoEstudiante;
+    
     
     
     
